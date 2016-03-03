@@ -19194,9 +19194,7 @@ var SlackList = function (_Component) {
     value: function renderItems() {
       var _this3 = this;
 
-      console.dir(this.state.teams);
       return this.state.teams.map(function (team, i) {
-        console.log(JSON.stringify(team));
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return _react2.default.createElement('span', null);
         return _react2.default.createElement(
           'div',
