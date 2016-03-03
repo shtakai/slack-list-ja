@@ -4684,8 +4684,9 @@ var MyComponent = function (_Component) {
       var _this2 = this;
 
       fetch('/teams.json').then(function (res) {
-        return _this2.setState({ teams: res.json() });
-      }, console.dir(res.json)).catch(function (ex) {
+        _this2.setState({ teams: res.json() });
+        console.dir(res.json);
+      }).catch(function (ex) {
         return console.log('parsing failed', ex);
       });
     }
