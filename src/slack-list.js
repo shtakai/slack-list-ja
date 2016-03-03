@@ -3,24 +3,10 @@ import { Component } from 'inferno-component';
 import Item from './item';
 import includes from 'lodash.includes';
 
-export default class MyComponent extends Component {
+export default class SlackList extends Component {
   constructor(props) {
     super(props);
-    this.state = { teams: [
-      {
-        "name": "slack-list-ja",
-        "url": "http://hoge",
-        "description": "team description",
-        "tag": ["game", "programing", "front"]
-      },
-      {
-        "name": "slack-list-ja2",
-        "url": "http://fuga",
-        "description": "team description2",
-        "tag": ["fuga"]
-      }
-    ]
-, search: '' };
+    this.state = { teams: [], search: '' };
   }
 
   componentDidMount() {
