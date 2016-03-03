@@ -10,7 +10,6 @@ export default class SlackList extends Component {
   }
 
   componentDidMount() {
-    console.log('a')
     fetch('/slack-list-ja/teams.json')
       .then(res => res.json())
       .then(teams => this.setState({ teams }))
@@ -22,6 +21,7 @@ export default class SlackList extends Component {
   }
 
   renderItems() {
+    console.dir(this.state.teams)
     console.log(this.state.teams.length)
     return this.state.teams.map(team => {
       if (!JSON.stringify(team).match(new RegExp(this.state.search))) return <span />;
