@@ -1,0 +1,12 @@
+[
+    {
+        "name": "slack-list-ja",
+        "url": "http://hoge",
+        "description": "team description"
+    },
+    {
+        "name": "slack-list-ja2",
+        "url": "http://fuga",
+        "description": "team description2"
+    }
+]
