@@ -19033,6 +19033,10 @@ module.exports = require('./lib/React');
 },{"./lib/React":26}],159:[function(require,module,exports){
 'use strict';
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactDom = require('react-dom');
 
 var _slackList = require('./slack-list');
@@ -19041,16 +19045,9 @@ var _slackList2 = _interopRequireDefault(_slackList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var tpl1291872782 = Inferno.createTemplate(function (v0) {
-  return {
-    tag: v0
-  };
-});
+(0, _reactDom.render)(_react2.default.createElement(_slackList2.default, null), document.getElementById('root'));
 
-
-(0, _reactDom.render)(tpl1291872782(_slackList2.default), document.getElementById('root'));
-
-},{"./slack-list":161,"react-dom":2}],160:[function(require,module,exports){
+},{"./slack-list":161,"react":158,"react-dom":2}],160:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19071,62 +19068,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl148986922 = Inferno.createTemplate(function (v0) {
-  return {
-    tag: "span",
-    attrs: {
-      class: "tag is-success"
-    },
-    children: v0
-  };
-});
-var tpl1895344825 = Inferno.createTemplate(function (v0, v1, v2, v3, v4) {
-  return {
-    tag: "div",
-    attrs: {
-      className: "column card animated fadeInUp"
-    },
-    children: {
-      tag: "div",
-      attrs: {
-        className: "card-content"
-      },
-      children: [{
-        tag: "div",
-        attrs: {
-          className: "media"
-        },
-        children: {
-          tag: "div",
-          attrs: {
-            className: "media-content"
-          },
-          children: [{
-            tag: "p",
-            attrs: {
-              className: "title is-5"
-            },
-            children: v0
-          }, {
-            tag: "a",
-            attrs: {
-              href: v1,
-              className: ""
-            },
-            children: v2
-          }]
-        }
-      }, {
-        tag: "div",
-        attrs: {
-          className: "content"
-        },
-        children: v3
-      }, v4]
-    }
-  };
-});
-
 var Item = function (_Component) {
   _inherits(Item, _Component);
 
@@ -19141,13 +19082,48 @@ var Item = function (_Component) {
     value: function renderTag() {
       //console.dir(this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>));
       return this.props.tag.map(function (tag) {
-        return tpl148986922(tag);
+        return _react2.default.createElement(
+          "span",
+          { "class": "tag is-success" },
+          tag
+        );
       });
     }
   }, {
     key: "render",
     value: function render() {
-      return tpl1895344825(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
+      return _react2.default.createElement(
+        "div",
+        { className: "column card animated fadeInUp" },
+        _react2.default.createElement(
+          "div",
+          { className: "card-content" },
+          _react2.default.createElement(
+            "div",
+            { className: "media" },
+            _react2.default.createElement(
+              "div",
+              { className: "media-content" },
+              _react2.default.createElement(
+                "p",
+                { className: "title is-5" },
+                this.props.name
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: this.props.url, className: "" },
+                this.props.url
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "content" },
+            this.props.description
+          ),
+          this.renderTag()
+        )
+      );
     }
   }]);
 
@@ -19180,128 +19156,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var tpl109638258 = Inferno.createTemplate(function () {
-  return {
-    tag: 'span'
-  };
-});
-var tpl1028451615 = Inferno.createTemplate(function (v0, v1, v2, v3, v4, v5) {
-  return {
-    tag: 'div',
-    attrs: {
-      className: 'column'
-    },
-    children: {
-      tag: v0,
-      attrs: {
-        key: v1,
-        name: v2,
-        url: v3,
-        description: v4,
-        tag: v5
-      }
-    }
-  };
-});
-var tpl1849784508 = Inferno.createTemplate(function (v0, v1) {
-  return {
-    tag: 'div',
-    children: [{
-      tag: 'section',
-      attrs: {
-        className: 'hero animated fadeIn'
-      },
-      children: {
-        tag: 'div',
-        attrs: {
-          className: 'hero-content'
-        },
-        children: {
-          tag: 'div',
-          attrs: {
-            className: 'container'
-          },
-          children: [{
-            tag: 'h1',
-            attrs: {
-              className: 'title'
-            },
-            children: {
-              tag: 'img',
-              attrs: {
-                src: './logo.png',
-                className: 'logo'
-              }
-            }
-          }, {
-            tag: 'h2',
-            attrs: {
-              className: 'subtitle'
-            },
-            children: 'A handpicked selection of top Slack communities in japan'
-          }, {
-            tag: 'p',
-            attrs: {
-              className: 'control'
-            },
-            children: {
-              tag: 'input',
-              attrs: {
-                onKeyDown: v0,
-                className: 'input is-medium',
-                type: 'text',
-                placeholder: 'Find a team'
-              }
-            }
-          }]
-        }
-      }
-    }, {
-      tag: 'div',
-      attrs: {
-        className: 'items'
-      },
-      children: {
-        tag: 'div',
-        attrs: {
-          className: 'columns is-multiline '
-        },
-        children: v1
-      }
-    }, {
-      tag: 'footer',
-      attrs: {
-        className: 'footer'
-      },
-      children: {
-        tag: 'div',
-        attrs: {
-          className: 'container'
-        },
-        children: {
-          tag: 'div',
-          attrs: {
-            className: 'content is-centered'
-          },
-          children: {
-            tag: 'p',
-            children: ['Created by ', {
-              tag: 'strong',
-              children: 'bokuweb'
-            }, '. inspired ', {
-              tag: 'a',
-              attrs: {
-                href: 'http://www.slacklist.info/'
-              },
-              children: 'slack list'
-            }, '.']
-          }
-        }
-      }
-    }]
-  };
-});
 
 var SlackList = function (_Component) {
   _inherits(SlackList, _Component);
@@ -19343,14 +19197,96 @@ var SlackList = function (_Component) {
       console.dir(this.state.teams);
       return this.state.teams.map(function (team, i) {
         console.log(JSON.stringify(team));
-        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return tpl109638258(null);
-        return tpl1028451615(_item2.default, team.url, team.name, team.url, team.description, team.tag);
+        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return _react2.default.createElement('span', null);
+        return _react2.default.createElement(
+          'div',
+          { className: 'column' },
+          _react2.default.createElement(_item2.default, {
+            key: team.url,
+            name: team.name,
+            url: team.url,
+            description: team.description,
+            tag: team.tag
+          })
+        );
       });
     }
   }, {
     key: 'render',
     value: function render() {
-      return tpl1849784508(this.onKeyDown.bind(this), this.renderItems());
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'section',
+          { className: 'hero animated fadeIn' },
+          _react2.default.createElement(
+            'div',
+            { className: 'hero-content' },
+            _react2.default.createElement(
+              'div',
+              { className: 'container' },
+              _react2.default.createElement(
+                'h1',
+                { className: 'title' },
+                _react2.default.createElement('img', { src: './logo.png', className: 'logo' })
+              ),
+              _react2.default.createElement(
+                'h2',
+                { className: 'subtitle' },
+                'A handpicked selection of top Slack communities in japan'
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'control' },
+                _react2.default.createElement('input', {
+                  onKeyDown: this.onKeyDown.bind(this),
+                  className: 'input is-medium',
+                  type: 'text',
+                  placeholder: 'Find a team' })
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'items' },
+          _react2.default.createElement(
+            'div',
+            { className: 'columns is-multiline ' },
+            this.renderItems()
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          { className: 'footer' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'content is-centered' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Created by ',
+                _react2.default.createElement(
+                  'strong',
+                  null,
+                  'bokuweb'
+                ),
+                '. inspired ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'http://www.slacklist.info/' },
+                  'slack list'
+                ),
+                '.'
+              )
+            )
+          )
+        )
+      );
     }
   }]);
 

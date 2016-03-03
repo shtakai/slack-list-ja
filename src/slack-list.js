@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 import Item from './item';
 
 export default class SlackList extends Component {
