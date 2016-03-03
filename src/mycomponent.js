@@ -37,7 +37,7 @@ export default class MyComponent extends Component {
           <div className="hero-content">
             <div className="container">
               <h1 className="title">
-                slak list in ja
+                <img src="./logo.png" className="logo" />
               </h1>
               <h2 className="subtitle">
                 A handpicked selection of top Slack communities

@@ -4577,7 +4577,7 @@ var tpl4040985080 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
   };
 });
 
-var tpl1856482084 = _inferno2.default.createTemplate(function (v0) {
+var tpl2085438239 = _inferno2.default.createTemplate(function (v0) {
   return {
     tag: 'div',
     children: [{
@@ -4600,7 +4600,13 @@ var tpl1856482084 = _inferno2.default.createTemplate(function (v0) {
             attrs: {
               className: 'title'
             },
-            children: 'slak list in ja'
+            children: {
+              tag: 'img',
+              attrs: {
+                src: './logo.png',
+                className: 'logo'
+              }
+            }
           }, {
             tag: 'h2',
             attrs: {
@@ -4674,7 +4680,7 @@ var MyComponent = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl1856482084(this.renderItems());
+      return tpl2085438239(this.renderItems());
     }
   }]);
 
