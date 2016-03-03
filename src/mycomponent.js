@@ -5,16 +5,29 @@ import Item from './item';
 export default class MyComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      teams: [],
-    };
+    this.state = { teams: [] };
   }
 
   componentDidMount() {
-    fetch('http://bokuweb.github.io/slack-list-ja/teams.json')
+    fetch('/slack-list-ja/teams.json')
       .then(res => res.json())
-      .then(json => console.log('parsed json', json))
+      .then(teams => this.setState({ teams }))
       .catch(ex => console.log('parsing failed', ex));
+  }
+
+  renderItems() {
+    return this.state.teams.map(team => {
+      return (
+        <div className="column">
+          <Item
+             name={ team.name }
+             url={ team.url }
+             description={ team.description }
+             url={ team.tag }
+          />
+        </div>
+      );
+    });
   }
 
   render() {
@@ -33,19 +46,8 @@ export default class MyComponent extends Component {
           </div>
         </section>
         <div className="items">
-          <div class="columns">
-            <div class="column">
-              <Item />
-            </div>
-            <div class="column">
-              <Item />
-            </div>
-            <div class="column">
-              <Item />
-            </div>
-            <div class="column">
-              <Item />
-            </div>
+          <div className="columns">
+            { this.renderItems() }
           </div>
         </div>
       </div>

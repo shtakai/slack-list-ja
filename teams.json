@@ -2,11 +2,13 @@
     {
         "name": "slack-list-ja",
         "url": "http://hoge",
-        "description": "team description"
+        "description": "team description",
+        "tag": ["game, programing, front"]
     },
     {
         "name": "slack-list-ja2",
         "url": "http://fuga",
-        "description": "team description2"
+        "description": "team description2",
+        "tag": ["fuga"]
     }
 ]

@@ -4466,7 +4466,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl3267827274 = _inferno2.default.createTemplate(function () {
+var tpl2193179768 = _inferno2.default.createTemplate(function (v0, v1, v2) {
   return {
     tag: 'div',
     attrs: {
@@ -4492,13 +4492,13 @@ var tpl3267827274 = _inferno2.default.createTemplate(function () {
             attrs: {
               className: 'title is-5'
             },
-            children: 'John Smith'
+            children: v0
           }, {
             tag: 'p',
             attrs: {
               className: 'subtitle is-6'
             },
-            children: '@johnsmith'
+            children: v1
           }]
         }
       }, {
@@ -4506,30 +4506,7 @@ var tpl3267827274 = _inferno2.default.createTemplate(function () {
         attrs: {
           className: 'content'
         },
-        children: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus nec iaculis mauris. ', {
-          tag: 'a',
-          attrs: {
-            href: '#'
-          },
-          children: '@bulmaio'
-        }, '.', {
-          tag: 'a',
-          attrs: {
-            href: '#'
-          },
-          children: '#css'
-        }, ' ', {
-          tag: 'a',
-          attrs: {
-            href: '#'
-          },
-          children: '#responsive'
-        }, {
-          tag: 'br'
-        }, {
-          tag: 'small',
-          children: '11:09 PM - 1 Jan 2016'
-        }]
+        children: v2
       }]
     }
   };
@@ -4547,7 +4524,7 @@ var Item = function (_Component) {
   _createClass(Item, [{
     key: 'render',
     value: function render() {
-      return tpl3267827274(null);
+      return tpl2193179768(this.props.name, this.props.url, this.props.description);
     }
   }]);
 
@@ -4583,7 +4560,24 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl3177324069 = _inferno2.default.createTemplate(function (v0, v1, v2, v3) {
+var tpl4040985080 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
+  return {
+    tag: 'div',
+    attrs: {
+      className: 'column'
+    },
+    children: {
+      tag: v0,
+      attrs: {
+        name: v1,
+        url: v4,
+        description: v3
+      }
+    }
+  };
+});
+
+var tpl538507610 = _inferno2.default.createTemplate(function (v0) {
   return {
     tag: 'div',
     children: [{
@@ -4624,41 +4618,9 @@ var tpl3177324069 = _inferno2.default.createTemplate(function (v0, v1, v2, v3) {
       children: {
         tag: 'div',
         attrs: {
-          class: 'columns'
+          className: 'columns'
         },
-        children: [{
-          tag: 'div',
-          attrs: {
-            class: 'column'
-          },
-          children: {
-            tag: v0
-          }
-        }, {
-          tag: 'div',
-          attrs: {
-            class: 'column'
-          },
-          children: {
-            tag: v1
-          }
-        }, {
-          tag: 'div',
-          attrs: {
-            class: 'column'
-          },
-          children: {
-            tag: v2
-          }
-        }, {
-          tag: 'div',
-          attrs: {
-            class: 'column'
-          },
-          children: {
-            tag: v3
-          }
-        }]
+        children: v0
       }
     }]
   };
@@ -4672,27 +4634,34 @@ var MyComponent = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MyComponent).call(this, props));
 
-    _this.state = {
-      teams: []
-    };
+    _this.state = { teams: [] };
     return _this;
   }
 
   _createClass(MyComponent, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      fetch('http://bokuweb.github.io/slack-list-ja/teams.json').then(function (res) {
+      var _this2 = this;
+
+      fetch('/slack-list-ja/teams.json').then(function (res) {
         return res.json();
-      }).then(function (json) {
-        return console.log('parsed json', json);
+      }).then(function (teams) {
+        return _this2.setState({ teams: teams });
       }).catch(function (ex) {
         return console.log('parsing failed', ex);
       });
     }
   }, {
+    key: 'renderItems',
+    value: function renderItems() {
+      return this.state.teams.map(function (team) {
+        return tpl4040985080(_item2.default, team.name, team.url, team.description, team.tag);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
-      return tpl3177324069(_item2.default, _item2.default, _item2.default, _item2.default);
+      return tpl538507610(this.renderItems());
     }
   }]);
 
