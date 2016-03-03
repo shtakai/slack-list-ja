@@ -20,15 +20,15 @@ export default class SlackList extends Component {
 
   renderItems() {
     return this.state.teams.map((team) => {
-      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return <span />;
+      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
       return (
         <div className="column" key={ team.url }>
           <Item
-             key={ team.url }
-             name={ team.name }
-             url={ team.url }
-             description={ team.description }
-             tag={ team.tag }
+            key={ team.url }
+            name={ team.name }
+            url={ team.url }
+            description={ team.description }
+            tag={ team.tag }
           />
         </div>
       );
@@ -49,10 +49,11 @@ export default class SlackList extends Component {
               </h2>
               <p className="control">
                 <input
-                   onChange={ ::this.onChange }
-                   className="input is-medium"
-                   type="text"
-                   placeholder="Find a team" />
+                  onChange={ ::this.onChange }
+                  className="input is-medium"
+                  type="text"
+                  placeholder="Find a team"
+                />
               </p>
             </div>
           </div>

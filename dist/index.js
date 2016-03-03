@@ -19194,7 +19194,7 @@ var SlackList = function (_Component) {
       var _this3 = this;
 
       return this.state.teams.map(function (team) {
-        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return _react2.default.createElement('span', null);
+        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
         return _react2.default.createElement(
           'div',
           { className: 'column', key: team.url },
@@ -19240,7 +19240,8 @@ var SlackList = function (_Component) {
                   onChange: this.onChange.bind(this),
                   className: 'input is-medium',
                   type: 'text',
-                  placeholder: 'Find a team' })
+                  placeholder: 'Find a team'
+                })
               )
             )
           )
