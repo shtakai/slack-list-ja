@@ -14,8 +14,7 @@ export default class Item extends Component {
 
   render() {
     return (
-      <div className="column is-3">
-        <div className="card animated fadeInUp">
+        <div className="column card animated fadeInUp">
           <div className="card-content">
             <div className="media">
               <div className="media-content">
@@ -29,7 +28,6 @@ export default class Item extends Component {
             { this.renderTag() }
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -59,7 +59,7 @@ export default class SlackList extends Component {
           </div>
         </section>
         <div className="items">
-          <div className="columns">
+          <div className="columns is-multiline ">
             { this.renderItems() }
           </div>
         </div>

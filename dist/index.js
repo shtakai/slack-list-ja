@@ -5393,55 +5393,49 @@ var tpl148986922 = _inferno2.default.createTemplate(function (v0) {
   };
 });
 
-var tpl2487510969 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
+var tpl1895344825 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
   return {
     tag: 'div',
     attrs: {
-      className: 'column is-3'
+      className: 'column card animated fadeInUp'
     },
     children: {
       tag: 'div',
       attrs: {
-        className: 'card animated fadeInUp'
+        className: 'card-content'
       },
-      children: {
+      children: [{
         tag: 'div',
         attrs: {
-          className: 'card-content'
+          className: 'media'
         },
-        children: [{
+        children: {
           tag: 'div',
           attrs: {
-            className: 'media'
+            className: 'media-content'
           },
-          children: {
-            tag: 'div',
+          children: [{
+            tag: 'p',
             attrs: {
-              className: 'media-content'
+              className: 'title is-5'
             },
-            children: [{
-              tag: 'p',
-              attrs: {
-                className: 'title is-5'
-              },
-              children: v0
-            }, {
-              tag: 'a',
-              attrs: {
-                href: v1,
-                className: ''
-              },
-              children: v2
-            }]
-          }
-        }, {
-          tag: 'div',
-          attrs: {
-            className: 'content'
-          },
-          children: v3
-        }, v4]
-      }
+            children: v0
+          }, {
+            tag: 'a',
+            attrs: {
+              href: v1,
+              className: ''
+            },
+            children: v2
+          }]
+        }
+      }, {
+        tag: 'div',
+        attrs: {
+          className: 'content'
+        },
+        children: v3
+      }, v4]
     }
   };
 });
@@ -5466,7 +5460,7 @@ var Item = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl2487510969(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
+      return tpl1895344825(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
     }
   }]);
 
@@ -5530,7 +5524,7 @@ var tpl1082904621 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
   };
 });
 
-var tpl4198140806 = _inferno2.default.createTemplate(function (v0, v1) {
+var tpl1849784508 = _inferno2.default.createTemplate(function (v0, v1) {
   return {
     tag: 'div',
     children: [{
@@ -5591,7 +5585,7 @@ var tpl4198140806 = _inferno2.default.createTemplate(function (v0, v1) {
       children: {
         tag: 'div',
         attrs: {
-          className: 'columns'
+          className: 'columns is-multiline '
         },
         children: v1
       }
@@ -5674,7 +5668,7 @@ var SlackList = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl4198140806(this.onKeyDown.bind(this), this.renderItems());
+      return tpl1849784508(this.onKeyDown.bind(this), this.renderItems());
     }
   }]);
 
