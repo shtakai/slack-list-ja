@@ -42,6 +42,9 @@ export default class MyComponent extends Component {
               <h2 className="subtitle">
                 A handpicked selection of top Slack communities
               </h2>
+              <p className="control">
+                <input className="input is-medium" type="text" placeholder="Find a team" />
+              </p>
             </div>
           </div>
         </section>

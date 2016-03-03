@@ -4577,7 +4577,7 @@ var tpl4040985080 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
   };
 });
 
-var tpl538507610 = _inferno2.default.createTemplate(function (v0) {
+var tpl1856482084 = _inferno2.default.createTemplate(function (v0) {
   return {
     tag: 'div',
     children: [{
@@ -4607,6 +4607,19 @@ var tpl538507610 = _inferno2.default.createTemplate(function (v0) {
               className: 'subtitle'
             },
             children: 'A handpicked selection of top Slack communities'
+          }, {
+            tag: 'p',
+            attrs: {
+              className: 'control'
+            },
+            children: {
+              tag: 'input',
+              attrs: {
+                className: 'input is-medium',
+                type: 'text',
+                placeholder: 'Find a team'
+              }
+            }
           }]
         }
       }
@@ -4661,7 +4674,7 @@ var MyComponent = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl538507610(this.renderItems());
+      return tpl1856482084(this.renderItems());
     }
   }]);
 
