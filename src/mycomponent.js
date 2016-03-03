@@ -5,7 +5,7 @@ import Item from './item';
 export default class MyComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { teams: [] };
+    this.state = { teams: [], search: '' };
   }
 
   componentDidMount() {
@@ -13,6 +13,10 @@ export default class MyComponent extends Component {
       .then(res => res.json())
       .then(teams => this.setState({ teams }))
       .catch(ex => console.log('parsing failed', ex));
+  }
+
+  onKeyDown({ target: { value } }) {
+    console.log(value);
   }
 
   renderItems() {
@@ -33,17 +37,22 @@ export default class MyComponent extends Component {
   render() {
     return (
       <div>
-        <section className="hero">
+        <section className="hero animated fadeIn">
           <div className="hero-content">
             <div className="container">
               <h1 className="title">
                 <img src="./logo.png" className="logo" />
               </h1>
               <h2 className="subtitle">
-                A handpicked selection of top Slack communities
+                A handpicked selection of top Slack communities in japan
               </h2>
               <p className="control">
-                <input className="input is-medium" type="text" placeholder="Find a team" />
+                <input
+                   value={ this.state.search }
+                   onKeyDown={ ::this.onKeyDown }
+                   className="input is-medium"
+                   type="text"
+                   placeholder="Find a team" />
               </p>
             </div>
           </div>

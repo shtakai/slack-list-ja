@@ -9,7 +9,7 @@ export default class Item extends Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card animated fadeInUp">
         <div className="card-content">
           <div className="media">
             <div className="media-content">

@@ -4466,11 +4466,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl2193179768 = _inferno2.default.createTemplate(function (v0, v1, v2) {
+var tpl2018552625 = _inferno2.default.createTemplate(function (v0, v1, v2) {
   return {
     tag: 'div',
     attrs: {
-      className: 'card'
+      className: 'card animated fadeInUp'
     },
     children: {
       tag: 'div',
@@ -4524,7 +4524,7 @@ var Item = function (_Component) {
   _createClass(Item, [{
     key: 'render',
     value: function render() {
-      return tpl2193179768(this.props.name, this.props.url, this.props.description);
+      return tpl2018552625(this.props.name, this.props.url, this.props.description);
     }
   }]);
 
@@ -4577,13 +4577,13 @@ var tpl4040985080 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
   };
 });
 
-var tpl2085438239 = _inferno2.default.createTemplate(function (v0) {
+var tpl2084468715 = _inferno2.default.createTemplate(function (v0, v1, v2) {
   return {
     tag: 'div',
     children: [{
       tag: 'section',
       attrs: {
-        className: 'hero'
+        className: 'hero animated fadeIn'
       },
       children: {
         tag: 'div',
@@ -4612,7 +4612,7 @@ var tpl2085438239 = _inferno2.default.createTemplate(function (v0) {
             attrs: {
               className: 'subtitle'
             },
-            children: 'A handpicked selection of top Slack communities'
+            children: 'A handpicked selection of top Slack communities in japan'
           }, {
             tag: 'p',
             attrs: {
@@ -4621,6 +4621,8 @@ var tpl2085438239 = _inferno2.default.createTemplate(function (v0) {
             children: {
               tag: 'input',
               attrs: {
+                value: v0,
+                onKeyDown: v1,
                 className: 'input is-medium',
                 type: 'text',
                 placeholder: 'Find a team'
@@ -4639,7 +4641,7 @@ var tpl2085438239 = _inferno2.default.createTemplate(function (v0) {
         attrs: {
           className: 'columns'
         },
-        children: v0
+        children: v2
       }
     }]
   };
@@ -4653,7 +4655,7 @@ var MyComponent = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MyComponent).call(this, props));
 
-    _this.state = { teams: [] };
+    _this.state = { teams: [], search: '' };
     return _this;
   }
 
@@ -4671,6 +4673,13 @@ var MyComponent = function (_Component) {
       });
     }
   }, {
+    key: 'onKeyDown',
+    value: function onKeyDown(_ref) {
+      var value = _ref.target.value;
+
+      console.log(value);
+    }
+  }, {
     key: 'renderItems',
     value: function renderItems() {
       return this.state.teams.map(function (team) {
@@ -4680,7 +4689,7 @@ var MyComponent = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl2085438239(this.renderItems());
+      return tpl2084468715(this.state.search, this.onKeyDown.bind(this), this.renderItems());
     }
   }]);
 
