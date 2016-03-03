@@ -4681,7 +4681,7 @@ var MyComponent = function (_Component) {
   _createClass(MyComponent, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      fetch('/slack-list-ja/teams.json').then(function (res) {
+      fetch('http://bokuweb.github.io/slack-list-ja/teams.json').then(function (res) {
         return res.json();
       }).then(function (json) {
         return console.log('parsed json', json);
