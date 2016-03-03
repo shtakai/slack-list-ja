@@ -4685,7 +4685,7 @@ var MyComponent = function (_Component) {
       var _this3 = this;
 
       return this.state.teams.map(function (team) {
-        if (!team.toSource().match(new RegExp(_this3.state.search))) return null;
+        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
         return tpl4040985080(_item2.default, team.name, team.url, team.description, team.tag);
       });
     }
