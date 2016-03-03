@@ -5525,7 +5525,7 @@ var tpl1028451615 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
   };
 });
 
-var tpl232590705 = _inferno2.default.createTemplate(function (v0, v1) {
+var tpl4198140806 = _inferno2.default.createTemplate(function (v0, v1) {
   return {
     tag: 'div',
     children: [{
@@ -5590,6 +5590,36 @@ var tpl232590705 = _inferno2.default.createTemplate(function (v0, v1) {
         },
         children: v1
       }
+    }, {
+      tag: 'footer',
+      attrs: {
+        className: 'footer'
+      },
+      children: {
+        tag: 'div',
+        attrs: {
+          className: 'container'
+        },
+        children: {
+          tag: 'div',
+          attrs: {
+            className: 'content is-centered'
+          },
+          children: {
+            tag: 'p',
+            children: ['Created by ', {
+              tag: 'strong',
+              children: 'bokuweb'
+            }, '. inspired ', {
+              tag: 'a',
+              attrs: {
+                href: 'http://www.slacklist.info/'
+              },
+              children: 'slack list'
+            }, '.']
+          }
+        }
+      }
     }]
   };
 });
@@ -5602,28 +5632,7 @@ var SlackList = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SlackList).call(this, props));
 
-    _this.state = { teams: [{
-        "name": "リモートワーカー",
-        "url": "https://remote-workers-jp.herokuapp.com/",
-        "description": "リモートワーカーが知見交換とか雑談するための Slack Team ",
-        "tag": ["Work"]
-      }, {
-        "name": "electron-jp",
-        "url": "https://electron-jp-slackin.herokuapp.com/",
-        "description": "Electronの日本ユーザがチャットできる場",
-        "tag": ["Electron", "JavaScript"]
-      }, {
-        "name": "JAWS-UG",
-        "url": "http://jaws-ug.jp/jaws-ug-slack/",
-        "description": "JAWS-UGではオープンのコミュニティの運営を議論するために、slackのチームを用意しています。",
-        "tag": ["AWS"]
-      }, {
-        "name": "Siv3D",
-        "url": "http://play-siv3d.hateblo.jp/entry/slack",
-        "description": "Siv3D ユーザのための Slack https://slack.com/ グループチャットをオープンしました。",
-        "tag": ["Game", "C++"]
-      }],
-      search: '' };
+    _this.state = { teams: [], search: '' };
     return _this;
   }
 
@@ -5632,7 +5641,6 @@ var SlackList = function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      console.log('a');
       fetch('/slack-list-ja/teams.json').then(function (res) {
         return res.json();
       }).then(function (teams) {
@@ -5661,7 +5669,7 @@ var SlackList = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl232590705(this.onKeyDown.bind(this), this.renderItems());
+      return tpl4198140806(this.onKeyDown.bind(this), this.renderItems());
     }
   }]);
 
