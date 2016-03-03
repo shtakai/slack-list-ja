@@ -5500,12 +5500,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl109638258 = _inferno2.default.createTemplate(function () {
-  return {
-    tag: 'span'
-  };
-});
-
 var tpl1082904621 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
   return {
     tag: 'div',
@@ -5661,9 +5655,9 @@ var SlackList = function (_Component) {
       var _this3 = this;
 
       console.dir(this.state.teams);
-      console.log(this.state.teams.length);
+      console.log(JSON.stringify(team));
       return this.state.teams.map(function (team) {
-        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return tpl109638258(null);
+        if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
         return tpl1082904621(_item2.default, team.name, team.url, team.description, team.tag);
       });
     }
