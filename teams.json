@@ -25,7 +25,7 @@
     },
     {
         "name": "aozorahack",
-        "url": "https://aozoraslackin.herokuapp.com/,
+        "url": "https://aozoraslackin.herokuapp.com/",
         "description": "青空文庫とその周辺に関する技術的な情報に関するslackチーム。",
         "tag": ["Tech"]
     }
