@@ -22,6 +22,12 @@
         "url": "http://play-siv3d.hateblo.jp/entry/slack",
         "description": "Siv3D ユーザのための Slack https://slack.com/ グループチャットをオープンしました。",
         "tag": ["Game", "C++"]
+    },
+    {
+        "name": "aozorahack",
+        "url": "https://aozoraslackin.herokuapp.com/,
+        "description": "青空文庫とその周辺に関する技術的な情報に関するslackチーム。",
+        "tag": ["Tech"]
     }
 
 ]
