@@ -20,6 +20,7 @@ export default class Item extends Component {
           <div className="content">
             { this.props.description }
           </div>
+          aaa
         </div>
       </div>
     );

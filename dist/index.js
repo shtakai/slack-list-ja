@@ -4466,7 +4466,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl2018552625 = _inferno2.default.createTemplate(function (v0, v1, v2) {
+var tpl1021524748 = _inferno2.default.createTemplate(function (v0, v1, v2) {
   return {
     tag: 'div',
     attrs: {
@@ -4507,7 +4507,7 @@ var tpl2018552625 = _inferno2.default.createTemplate(function (v0, v1, v2) {
           className: 'content'
         },
         children: v2
-      }]
+      }, 'aaa']
     }
   };
 });
@@ -4524,7 +4524,7 @@ var Item = function (_Component) {
   _createClass(Item, [{
     key: 'render',
     value: function render() {
-      return tpl2018552625(this.props.name, this.props.url, this.props.description);
+      return tpl1021524748(this.props.name, this.props.url, this.props.description);
     }
   }]);
 
@@ -4677,12 +4677,15 @@ var MyComponent = function (_Component) {
     value: function onKeyDown(_ref) {
       var value = _ref.target.value;
 
-      console.log(value);
+      this.setState({ search: value });
     }
   }, {
     key: 'renderItems',
     value: function renderItems() {
+      var _this3 = this;
+
       return this.state.teams.map(function (team) {
+        if (!team.toSource().match(new RegExp(_this3.state.search))) return null;
         return tpl4040985080(_item2.default, team.name, team.url, team.description, team.tag);
       });
     }
