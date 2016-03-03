@@ -7,6 +7,10 @@ export default class Item extends Component {
     super(props);
   }
 
+  renderTag() {
+    return this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>);
+  }
+
   render() {
     return (
       <div className="card animated fadeInUp">
@@ -20,11 +24,7 @@ export default class Item extends Component {
           <div className="content">
             { this.props.description }
           </div>
-          {
-            return this.props.tag(tag => {
-              return <span class="tag is-success">{ tag }</span>
-            });
-          }
+          { this.renderTag() }
         </div>
       </div>
     );

@@ -21,7 +21,7 @@ export default class MyComponent extends Component {
 
   renderItems() {
     return this.state.teams.map(team => {
-      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return;
+      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
       return (
         <div className="column">
           <Item
