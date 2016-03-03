@@ -11023,6 +11023,9 @@ a.menu-block:hover {
 .card {
   margin: 0 auto;
 }
+.card p.title {
+  margin: 0;
+}
 .tag {
   margin: 0 5px 0 0;
 }

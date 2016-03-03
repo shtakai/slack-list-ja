@@ -5398,7 +5398,7 @@ var tpl148986922 = _inferno2.default.createTemplate(function (v0) {
   };
 });
 
-var tpl864175915 = _inferno2.default.createTemplate(function (v0, v1, v2, v3) {
+var tpl1862897379 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
   return {
     tag: 'div',
     attrs: {
@@ -5426,11 +5426,12 @@ var tpl864175915 = _inferno2.default.createTemplate(function (v0, v1, v2, v3) {
             },
             children: v0
           }, {
-            tag: 'p',
+            tag: 'a',
             attrs: {
-              className: 'subtitle is-6'
+              href: v1,
+              className: ''
             },
-            children: v1
+            children: v2
           }]
         }
       }, {
@@ -5438,8 +5439,8 @@ var tpl864175915 = _inferno2.default.createTemplate(function (v0, v1, v2, v3) {
         attrs: {
           className: 'content'
         },
-        children: v2
-      }, v3]
+        children: v3
+      }, v4]
     }
   };
 });
@@ -5464,7 +5465,7 @@ var Item = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl864175915(this.props.name, this.props.url, this.props.description, this.renderTag());
+      return tpl1862897379(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
     }
   }]);
 
