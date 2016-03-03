@@ -26,7 +26,6 @@ export default class SlackList extends Component {
       return (
         <div className="column">
           <Item
-             key={ team.name }
              name={ team.name }
              url={ team.url }
              description={ team.description }

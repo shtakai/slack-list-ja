@@ -5506,7 +5506,7 @@ var tpl109638258 = _inferno2.default.createTemplate(function () {
   };
 });
 
-var tpl1028451615 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4, v5) {
+var tpl1082904621 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
   return {
     tag: 'div',
     attrs: {
@@ -5515,11 +5515,10 @@ var tpl1028451615 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
     children: {
       tag: v0,
       attrs: {
-        key: v1,
-        name: v2,
-        url: v3,
-        description: v4,
-        tag: v5
+        name: v1,
+        url: v2,
+        description: v3,
+        tag: v4
       }
     }
   };
@@ -5663,7 +5662,7 @@ var SlackList = function (_Component) {
 
       return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return tpl109638258(null);
-        return tpl1028451615(_item2.default, team.name, team.name, team.url, team.description, team.tag);
+        return tpl1082904621(_item2.default, team.name, team.url, team.description, team.tag);
       });
     }
   }, {
