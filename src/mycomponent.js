@@ -12,10 +12,8 @@ export default class MyComponent extends Component {
 
   componentDidMount() {
     fetch('/teams.json')
-      .then(res => {
-        this.setState({ teams: res.json() });
-        console.dir(res.json);
-      })
+      .then(res => res.json())
+      .then(json => console.log('parsed json', json))
       .catch(ex => console.log('parsing failed', ex));
   }
 

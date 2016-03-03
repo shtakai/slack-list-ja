@@ -4681,11 +4681,10 @@ var MyComponent = function (_Component) {
   _createClass(MyComponent, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var _this2 = this;
-
       fetch('/teams.json').then(function (res) {
-        _this2.setState({ teams: res.json() });
-        console.dir(res.json);
+        return res.json();
+      }).then(function (json) {
+        return console.log('parsed json', json);
       }).catch(function (ex) {
         return console.log('parsing failed', ex);
       });
