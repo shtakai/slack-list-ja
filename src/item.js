@@ -20,7 +20,11 @@ export default class Item extends Component {
           <div className="content">
             { this.props.description }
           </div>
-          aaa
+          {
+            return this.props.tag(tag => {
+              return <span class="tag is-success">{ tag }</span>
+            });
+          }
         </div>
       </div>
     );

@@ -21,10 +21,11 @@ export default class MyComponent extends Component {
 
   renderItems() {
     return this.state.teams.map(team => {
-      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
+      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return;
       return (
         <div className="column">
           <Item
+             key={ team.name }
              name={ team.name }
              url={ team.url }
              description={ team.description }
