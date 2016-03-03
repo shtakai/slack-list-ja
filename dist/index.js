@@ -5393,49 +5393,55 @@ var tpl148986922 = _inferno2.default.createTemplate(function (v0) {
   };
 });
 
-var tpl1862897379 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
+var tpl2487510969 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
   return {
     tag: 'div',
     attrs: {
-      className: 'card animated fadeInUp'
+      className: 'column is-3'
     },
     children: {
       tag: 'div',
       attrs: {
-        className: 'card-content'
+        className: 'card animated fadeInUp'
       },
-      children: [{
+      children: {
         tag: 'div',
         attrs: {
-          className: 'media'
+          className: 'card-content'
         },
-        children: {
+        children: [{
           tag: 'div',
           attrs: {
-            className: 'media-content'
+            className: 'media'
           },
-          children: [{
-            tag: 'p',
+          children: {
+            tag: 'div',
             attrs: {
-              className: 'title is-5'
+              className: 'media-content'
             },
-            children: v0
-          }, {
-            tag: 'a',
-            attrs: {
-              href: v1,
-              className: ''
-            },
-            children: v2
-          }]
-        }
-      }, {
-        tag: 'div',
-        attrs: {
-          className: 'content'
-        },
-        children: v3
-      }, v4]
+            children: [{
+              tag: 'p',
+              attrs: {
+                className: 'title is-5'
+              },
+              children: v0
+            }, {
+              tag: 'a',
+              attrs: {
+                href: v1,
+                className: ''
+              },
+              children: v2
+            }]
+          }
+        }, {
+          tag: 'div',
+          attrs: {
+            className: 'content'
+          },
+          children: v3
+        }, v4]
+      }
     }
   };
 });
@@ -5460,7 +5466,7 @@ var Item = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return tpl1862897379(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
+      return tpl2487510969(this.props.name, this.props.url, this.props.url, this.props.description, this.renderTag());
     }
   }]);
 
