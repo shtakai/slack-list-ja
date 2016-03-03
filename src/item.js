@@ -1,6 +1,4 @@
-
-import Inferno from 'inferno';
-import { Component } from 'inferno-component';
+import react, { Component } from 'react';
 
 export default class Item extends Component {
   constructor(props) {

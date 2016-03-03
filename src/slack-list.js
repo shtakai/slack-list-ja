@@ -1,7 +1,5 @@
-import Inferno from 'inferno';
-import { Component } from 'inferno-component';
+import react, { Component } from 'react';
 import Item from './item';
-import includes from 'lodash.includes';
 
 export default class SlackList extends Component {
   constructor(props) {
@@ -22,14 +20,13 @@ export default class SlackList extends Component {
 
   renderItems() {
     console.dir(this.state.teams)
-
     return this.state.teams.map((team, i) => {
       console.log(JSON.stringify(team))
-      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return <div />;
+      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return <span />;
       return (
         <div className="column">
           <Item
-             key={ i }
+             key={ team.url }
              name={ team.name }
              url={ team.url }
              description={ team.description }

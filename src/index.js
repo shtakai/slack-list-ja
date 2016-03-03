@@ -1,5 +1,4 @@
-import Inferno from 'inferno';
-import InfernoDOM from 'inferno-dom';
+import { render } from 'react-dom';
 import SlackList from './slack-list';
 
-InfernoDOM.render(<SlackList />, document.getElementById('root'));
+render(<SlackList />, document.getElementById('root'));
