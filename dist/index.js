@@ -5640,6 +5640,7 @@ var SlackList = function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
+      console.log('a');
       fetch('/slack-list-ja/teams.json').then(function (res) {
         return res.json();
       }).then(function (teams) {
@@ -5660,6 +5661,7 @@ var SlackList = function (_Component) {
     value: function renderItems() {
       var _this3 = this;
 
+      console.log(this.state.teams.length);
       return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return tpl109638258(null);
         return tpl1082904621(_item2.default, team.name, team.url, team.description, team.tag);
