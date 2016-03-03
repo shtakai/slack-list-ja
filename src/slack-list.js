@@ -14,7 +14,7 @@ export default class SlackList extends Component {
       .catch(e => console.log('parsing failed', e));
   }
 
-  onKeyDown({ target: { value } }) {
+  onChange({ target: { value } }) {
     this.setState({ search: value });
   }
 
@@ -49,7 +49,7 @@ export default class SlackList extends Component {
               </h2>
               <p className="control">
                 <input
-                   onKeyDown={ ::this.onKeyDown }
+                   onChange={ ::this.onChange }
                    className="input is-medium"
                    type="text"
                    placeholder="Find a team" />

@@ -19081,10 +19081,10 @@ var Item = function (_Component) {
     key: "renderTag",
     value: function renderTag() {
       //console.dir(this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>));
-      return this.props.tag.map(function (tag) {
+      return this.props.tag.map(function (tag, i) {
         return _react2.default.createElement(
           "span",
-          { "class": "tag is-success" },
+          { key: tag + i, className: "tag is-success" },
           tag
         );
       });
@@ -19183,8 +19183,8 @@ var SlackList = function (_Component) {
       });
     }
   }, {
-    key: 'onKeyDown',
-    value: function onKeyDown(_ref) {
+    key: 'onChange',
+    value: function onChange(_ref) {
       var value = _ref.target.value;
 
       this.setState({ search: value });
@@ -19238,7 +19238,7 @@ var SlackList = function (_Component) {
                 'p',
                 { className: 'control' },
                 _react2.default.createElement('input', {
-                  onKeyDown: this.onKeyDown.bind(this),
+                  onChange: this.onChange.bind(this),
                   className: 'input is-medium',
                   type: 'text',
                   placeholder: 'Find a team' })
