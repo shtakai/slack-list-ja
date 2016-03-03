@@ -4577,7 +4577,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tpl3986532074 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4, v5) {
+var tpl1028451615 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4, v5) {
   return {
     tag: 'div',
     attrs: {
@@ -4588,8 +4588,9 @@ var tpl3986532074 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
       attrs: {
         key: v1,
         name: v2,
-        url: v5,
-        description: v4
+        url: v3,
+        description: v4,
+        tag: v5
       }
     }
   };
@@ -4704,7 +4705,7 @@ var MyComponent = function (_Component) {
 
       return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
-        return tpl3986532074(_item2.default, team.name, team.name, team.url, team.description, team.tag);
+        return tpl1028451615(_item2.default, team.name, team.name, team.url, team.description, team.tag);
       });
     }
   }, {

@@ -29,7 +29,7 @@ export default class MyComponent extends Component {
              name={ team.name }
              url={ team.url }
              description={ team.description }
-             url={ team.tag }
+             tag={ team.tag }
           />
         </div>
       );
