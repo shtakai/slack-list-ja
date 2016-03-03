@@ -23,11 +23,12 @@ export default class SlackList extends Component {
   renderItems() {
     console.dir(this.state.teams)
     console.log(JSON.stringify(team))
-    return this.state.teams.map(team => {
+    return this.state.teams.map((team, i) => {
       if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
       return (
         <div className="column">
           <Item
+             key={ i }
              name={ team.name }
              url={ team.url }
              description={ team.description }
