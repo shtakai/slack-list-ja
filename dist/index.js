@@ -19080,11 +19080,10 @@ var Item = function (_Component) {
   _createClass(Item, [{
     key: "renderTag",
     value: function renderTag() {
-      //console.dir(this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>));
-      return this.props.tag.map(function (tag, i) {
+      return this.props.tag.map(function (tag) {
         return _react2.default.createElement(
           "span",
-          { key: tag + i, className: "tag is-success" },
+          { key: tag, className: "tag is-success" },
           tag
         );
       });
@@ -19194,12 +19193,13 @@ var SlackList = function (_Component) {
     value: function renderItems() {
       var _this3 = this;
 
-      return this.state.teams.map(function (team, i) {
+      return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return _react2.default.createElement('span', null);
         return _react2.default.createElement(
           'div',
           { className: 'column', key: team.url },
           _react2.default.createElement(_item2.default, {
+            key: team.url,
             name: team.name,
             url: team.url,
             description: team.description,
