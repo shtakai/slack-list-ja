@@ -11,7 +11,7 @@ export default class MyComponent extends Component {
   }
 
   componentDidMount() {
-    fetch('/teams.json')
+    fetch('/slack-list-ja/teams.json')
       .then(res => res.json())
       .then(json => console.log('parsed json', json))
       .catch(ex => console.log('parsing failed', ex));
