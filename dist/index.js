@@ -5506,7 +5506,7 @@ var tpl109638258 = _inferno2.default.createTemplate(function () {
   };
 });
 
-var tpl1082904621 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4) {
+var tpl1028451615 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v4, v5) {
   return {
     tag: 'div',
     attrs: {
@@ -5515,10 +5515,11 @@ var tpl1082904621 = _inferno2.default.createTemplate(function (v0, v1, v2, v3, v
     children: {
       tag: v0,
       attrs: {
-        name: v1,
-        url: v2,
-        description: v3,
-        tag: v4
+        key: v1,
+        name: v2,
+        url: v3,
+        description: v4,
+        tag: v5
       }
     }
   };
@@ -5601,7 +5602,28 @@ var SlackList = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SlackList).call(this, props));
 
-    _this.state = { teams: [], search: '' };
+    _this.state = { teams: [{
+        "name": "リモートワーカー",
+        "url": "https://remote-workers-jp.herokuapp.com/",
+        "description": "リモートワーカーが知見交換とか雑談するための Slack Team ",
+        "tag": ["Work"]
+      }, {
+        "name": "electron-jp",
+        "url": "https://electron-jp-slackin.herokuapp.com/",
+        "description": "Electronの日本ユーザがチャットできる場",
+        "tag": ["Electron", "JavaScript"]
+      }, {
+        "name": "JAWS-UG",
+        "url": "http://jaws-ug.jp/jaws-ug-slack/",
+        "description": "JAWS-UGではオープンのコミュニティの運営を議論するために、slackのチームを用意しています。",
+        "tag": ["AWS"]
+      }, {
+        "name": "Siv3D",
+        "url": "http://play-siv3d.hateblo.jp/entry/slack",
+        "description": "Siv3D ユーザのための Slack https://slack.com/ グループチャットをオープンしました。",
+        "tag": ["Game", "C++"]
+      }],
+      search: '' };
     return _this;
   }
 
@@ -5610,6 +5632,7 @@ var SlackList = function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
+      console.log('a');
       fetch('/slack-list-ja/teams.json').then(function (res) {
         return res.json();
       }).then(function (teams) {
@@ -5632,7 +5655,7 @@ var SlackList = function (_Component) {
 
       return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return tpl109638258(null);
-        return tpl1082904621(_item2.default, team.name, team.url, team.description, team.tag);
+        return tpl1028451615(_item2.default, team.name, team.name, team.url, team.description, team.tag);
       });
     }
   }, {
