@@ -13,7 +13,7 @@ export default class SlackList extends Component {
     fetch('/slack-list-ja/teams.json')
       .then(res => res.json())
       .then(teams => this.setState({ teams }))
-      .catch(ex => console.log('parsing failed', ex));
+      .catch(e => console.log('parsing failed', e));
   }
 
   onKeyDown({ target: { value } }) {
@@ -26,7 +26,6 @@ export default class SlackList extends Component {
       return (
         <div className="column">
           <Item
-             key={ team.name }
              name={ team.name }
              url={ team.url }
              description={ team.description }
