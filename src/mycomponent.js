@@ -1,11 +1,26 @@
 import Inferno from 'inferno';
 import { Component } from 'inferno-component';
 import Item from './item';
+import includes from 'lodash.includes';
 
 export default class MyComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { teams: [], search: '' };
+    this.state = { teams: [
+      {
+        "name": "slack-list-ja",
+        "url": "http://hoge",
+        "description": "team description",
+        "tag": ["game", "programing", "front"]
+      },
+      {
+        "name": "slack-list-ja2",
+        "url": "http://fuga",
+        "description": "team description2",
+        "tag": ["fuga"]
+      }
+    ]
+, search: '' };
   }
 
   componentDidMount() {
@@ -21,7 +36,7 @@ export default class MyComponent extends Component {
 
   renderItems() {
     return this.state.teams.map(team => {
-      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
+      if (!JSON.stringify(team).match(new RegExp(this.state.search))) return <span />;
       return (
         <div className="column">
           <Item
@@ -50,7 +65,6 @@ export default class MyComponent extends Component {
               </h2>
               <p className="control">
                 <input
-                   value={ this.state.search }
                    onKeyDown={ ::this.onKeyDown }
                    className="input is-medium"
                    type="text"

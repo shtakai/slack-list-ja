@@ -8,6 +8,7 @@ export default class Item extends Component {
   }
 
   renderTag() {
+    //console.dir(this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>));
     return this.props.tag.map(tag => <span class="tag is-success">{ tag }</span>);
   }
 
