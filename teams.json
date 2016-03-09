@@ -70,5 +70,11 @@
         "url": "https://slackin-gotanda-pm.herokuapp.com/",
         "description": "五反田を中心に活動するPerlの技術者コミュニティ",
         "tag": ["Perl", "Web"]
+    },
+    {
+        "name": "ゲーム開発環境勉強会 on Slack",
+        "url": "https://slackin-game-des.herokuapp.com/",
+        "description": "CIツール（Jenkins）や、バグトラッキングシステム（Redmine）、バージョン管理システム、自動化ツールなど、ゲームのチーム開発に必要な環境についての勉強会グループです。",
+        "tag": ["Game", "Develop"]
     }
 ]
