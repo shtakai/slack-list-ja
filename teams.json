@@ -52,6 +52,12 @@
         "url": "http://csrf.jp:3000/",
         "description": "セキュリティテストの技術共有を目的としたコミュニティ",
         "tag": ["Tech", "Security"]
+    },
+    {
+        "name": "A11YJ",
+        "url": "https://a11yj.herokuapp.com/",
+        "description": "日本語でアクセシビリティについて語り合う Slack Team",
+        "tag": ["accessibility"]
     }
 
 ]
