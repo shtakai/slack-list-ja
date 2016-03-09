@@ -34,6 +34,12 @@
         "url": "http://productmanagers.jp/",
         "description": "プロダクトマネジメント・オーナーシップに興味を持つ人々が集まるコミュニティ",
         "tag": ["Work"]
+    },
+    {
+        "name": "Unityユーザーグループ",
+        "url": "https://unityuserj-slack-invite.herokuapp.com/",
+        "description": "Unity http://unity3d.com ユーザーのためのコミュニティ",
+        "tag": ["Unity"]
     }
 
 ]
