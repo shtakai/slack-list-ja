@@ -100,5 +100,11 @@
         "url": "mailto:larachat.jp@gmail.com",
         "description": "Laravelの話ができる、魅惑の会員制チャットルーム",
         "tag": ["PHP", "Web"]
+    },
+    {
+        "name": "Crystal-JP",
+        "url": "http://crystal.pine.moe/",
+        "description": "プログラミング言語 Crystal の日本語コミュニティ",
+        "tag": ["Crystal]
     }
 ]
