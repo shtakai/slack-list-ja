@@ -88,5 +88,11 @@
         "url": "https://samezi-but.com/zdnj.html",
         "description": "仕事中にサボタージュして雑談することに特化したSlack Teamです",
         "tag": ["Tech", "Talk", "Sabotage"]
+    },
+    {
+        "name": "PHPユーザーズ(日本語)",
+        "url": "https://slackin-phpusers-ja.herokuapp.com/",
+        "description": "日本語で PHP 関連の話題を中心とした雑談をするための Slack チーム",
+        "tag": ["PHP", "Web"]
     }
 ]
