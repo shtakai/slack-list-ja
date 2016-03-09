@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Item from './item';
 
+require('whatwg-fetch');
+
 export default class SlackList extends Component {
   constructor(props) {
     super(props);
