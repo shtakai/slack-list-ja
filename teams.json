@@ -58,6 +58,11 @@
         "url": "https://a11yj.herokuapp.com/",
         "description": "日本語でアクセシビリティについて語り合う Slack Team",
         "tag": ["accessibility"]
+    },
+    {
+        "name": "Gotanda.js",
+        "url": "http://gotanda.js.org/",
+        "description": "主に JavaScript についてワイワイしているコミュニティ",
+        "tag": ["JavaScript", "Node.js", "Web"]
     }
-
 ]
