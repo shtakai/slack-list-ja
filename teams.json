@@ -76,5 +76,11 @@
         "url": "https://slackin-game-des.herokuapp.com/",
         "description": "CIツール（Jenkins）や、バグトラッキングシステム（Redmine）、バージョン管理システム、自動化ツールなど、ゲームのチーム開発に必要な環境についての勉強会グループです。",
         "tag": ["Game", "Develop"]
+    },
+    {
+        "name": "雑兵MeetUp",
+        "url": "http://join2slack-zohyomeetup.rhcloud.com/",
+        "description": "雑兵たちのたまり場",
+        "tag": ["Web", "Work"]
     }
 ]
