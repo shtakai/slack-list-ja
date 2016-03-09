@@ -28,6 +28,12 @@
         "url": "https://aozoraslackin.herokuapp.com/",
         "description": "青空文庫とその周辺に関する技術的な情報に関するslackチーム。",
         "tag": ["Tech"]
+    },
+    {
+        "name": "product-managers-japan",
+        "url": "http://productmanagers.jp/",
+        "description": "プロダクトマネジメント・オーナーシップに興味を持つ人々が集まるコミュニティ",
+        "tag": ["Work"]
     }
 
 ]
