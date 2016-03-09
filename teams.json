@@ -82,5 +82,11 @@
         "url": "http://join2slack-zohyomeetup.rhcloud.com/",
         "description": "雑兵たちのたまり場",
         "tag": ["Web", "Work"]
+    },    
+    {
+        "name": "雑談Slack",
+        "url": "https://samezi-but.com/zdnj.html",
+        "description": "仕事中にサボタージュして雑談することに特化したSlack Teamです",
+        "tag": ["Tech", "Talk", "Sabotage"]
     }
 ]
