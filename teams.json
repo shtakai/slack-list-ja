@@ -94,5 +94,11 @@
         "url": "https://slackin-phpusers-ja.herokuapp.com/",
         "description": "日本語で PHP 関連の話題を中心とした雑談をするための Slack チーム",
         "tag": ["PHP", "Web"]
+    },
+    {
+        "name": "larachat-jp",
+        "url": "mailto:larachat.jp@gmail.com",
+        "description": "Laravelの話ができる、魅惑の会員制チャットルーム",
+        "tag": ["PHP", "Web"]
     }
 ]
