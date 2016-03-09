@@ -46,6 +46,12 @@
         "url": "https://gist.github.com/kotakanbe/e4232407b75e1ec584e7",
         "description": "究極のIT系技術情報収集用Slackチーム",
         "tag": ["Tech"]
+    },
+    {
+        "name": "A11YJ",
+        "url": "https://a11yj.herokuapp.com/",
+        "description": "日本語でアクセシビリティについて語り合う Slack Team",
+        "tag": ["accessibility"]
     }
 
 ]
