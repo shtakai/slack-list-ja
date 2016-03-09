@@ -41,5 +41,11 @@
         "description": "Unity http://unity3d.com ユーザーのためのコミュニティ",
         "tag": ["Unity"]
     }
+    {
+        "name": "モヒカンSlack",
+        "url": "https://gist.github.com/kotakanbe/e4232407b75e1ec584e7",
+        "description": "究極のIT系技術情報収集用Slackチーム",
+        "tag": ["Tech"]
+    }
 
 ]
