@@ -64,5 +64,11 @@
         "url": "http://gotanda.js.org/",
         "description": "主に JavaScript についてワイワイしているコミュニティ",
         "tag": ["JavaScript", "Node.js", "Web"]
+    },
+    {
+        "name": "Gotanda.pm",
+        "url": "https://slackin-gotanda-pm.herokuapp.com/",
+        "description": "五反田を中心に活動するPerlの技術者コミュニティ",
+        "tag": ["Perl", "Web"]
     }
 ]
