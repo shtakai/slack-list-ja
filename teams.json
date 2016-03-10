@@ -118,5 +118,11 @@
         "url": "https://archlinuxjp-slack.herokuapp.com/",
         "description": "Arch Linux の日本語コミュニティ",
         "tag": ["ArchLinux"]
+    },
+    {
+        "name": "日本Seleniumユーザーコミュニティ",
+        "url": "https://seleniumjp.herokuapp.com/",
+        "description": "Seleniumに関する分からないこと・困ったことについてユーザー同士で助け合うSlackチームです。",
+        "tag": ["Java", "Ruby", "Python", "Node.js", "Javascript", "Web"]
     }
 ]
