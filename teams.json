@@ -106,5 +106,11 @@
         "url": "http://crystal.pine.moe/",
         "description": "プログラミング言語 Crystal の日本語コミュニティ",
         "tag": ["Crystal"]
+    },
+    {
+        "name": "Kyoto.js",
+        "url": "https://kyotojs.herokuapp.com/",
+        "description": "京都周辺のエンジニアがJavaScriptについて話します",
+        "tag": ["JavaScript", "Node.js", "Web"]
     }
 ]
