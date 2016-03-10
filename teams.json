@@ -124,5 +124,11 @@
         "url": "https://seleniumjp.herokuapp.com/",
         "description": "Seleniumに関する分からないこと・困ったことについてユーザー同士で助け合うSlackチームです。",
         "tag": ["Java", "Ruby", "Python", "Node.js", "Javascript", "Web"]
+    },
+    {
+        "name": "ddd-jp",
+        "url": "https://ddd-jp-invitation.herokuapp.com/",
+        "description": "日本語で DDD について雑に話せる Slack チーム",
+        "tag": ["DDD"]
     }
 ]
