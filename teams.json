@@ -108,7 +108,7 @@
         "tag": ["Crystal"]
     },
     {
-        "name": "Kyoto.js"
+        "name": "Kyoto.js",
         "url": "https://kyotojs.herokuapp.com/",
         "description": "京都周辺のエンジニアがJavaScriptについて話します",
         "tag": ["JavaScript", "Node.js", "Web"]
