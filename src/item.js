@@ -16,7 +16,7 @@ export default class Item extends Component {
             <div className="media">
               <div className="media-content">
                 <p className="title is-5">{ this.props.name }</p>
-                <a href={ this.props.url } className="">{ this.props.url }</a>
+                <a href={ this.props.url } className="url">{ this.props.url }</a>
               </div>
             </div>
             <div className="content">

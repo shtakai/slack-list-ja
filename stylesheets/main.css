@@ -11024,6 +11024,9 @@ a.menu-block:hover {
   width: 90%;
   margin: 0 auto;
 }
+.url {
+  word-wrap: break-word;
+}
 .card {
   width: 320px;
   margin: 10px;

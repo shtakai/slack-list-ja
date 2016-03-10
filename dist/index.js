@@ -19501,7 +19501,7 @@ var Item = function (_Component) {
               ),
               _react2.default.createElement(
                 "a",
-                { href: this.props.url, className: "" },
+                { href: this.props.url, className: "url" },
                 this.props.url
               )
             )
