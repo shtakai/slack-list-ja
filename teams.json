@@ -142,5 +142,11 @@
         "url": "https://swiftjp.herokuapp.com/",
         "description": "Swiftについて日本語で話すSlack",
         "tag": ["Swift", "iOS", "Apple"]
+    },
+    {
+        "name": "r-wakalang",
+        "url": "https://r-wakalang.herokuapp.com/",
+        "description": "Rのわからないことを質問したり雑談したりするSlack",
+        "tag": ["R"]
     }
 ]
