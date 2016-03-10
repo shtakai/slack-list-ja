@@ -136,5 +136,11 @@
         "url": "http://oekaki-slack.tumblr.com/",
         "description": "お絵描きに関するSlackチーム",
         "tag": ["CG", "Design", "Illustration", "Manga"]
+    },
+    {
+        "name": "SwiftJP",
+        "url": "https://swiftjp.herokuapp.com/",
+        "description": "Swiftについて日本語で話すSlack",
+        "tag": ["Swift", "iOS", "Apple"]
     }
 ]
