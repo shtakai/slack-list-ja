@@ -130,5 +130,11 @@
         "url": "https://ddd-jp-invitation.herokuapp.com/",
         "description": "日本語で DDD について雑に話せる Slack チーム",
         "tag": ["DDD"]
+    },
+    {
+        "name": "お絵描きSlack",
+        "url": "http://oekaki-slack.tumblr.com/",
+        "description": "お絵描きに関するSlackチーム",
+        "tag": ["CG", "Design", "Illustration", "Manga"]
     }
 ]
