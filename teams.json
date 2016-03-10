@@ -112,5 +112,11 @@
         "url": "https://kyotojs.herokuapp.com/",
         "description": "京都周辺のエンジニアがJavaScriptについて話します",
         "tag": ["JavaScript", "Node.js", "Web"]
+    },
+    {
+        "name": "archlinuxjp",
+        "url": "https://archlinuxjp-slack.herokuapp.com/",
+        "description": "Arch Linux の日本語コミュニティ",
+        "tag": ["ArchLinux"]
     }
 ]
