@@ -11020,6 +11020,10 @@ a.menu-block:hover {
   height: 200px;
   width: auto;
 }
+.columns {
+  width: 90%;
+  margin: 0 auto;
+}
 .card {
   width: 320px;
   margin: 10px;
