@@ -24,7 +24,7 @@ export default class SlackList extends Component {
     return this.state.teams.map((team) => {
       if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
       return (
-        <div className="column" key={ team.url }>
+        <div key={ team.url }>
           <Item
             key={ team.url }
             name={ team.name }

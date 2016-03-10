@@ -11021,7 +11021,8 @@ a.menu-block:hover {
   width: auto;
 }
 .card {
-  margin: 0 auto;
+  width: 320px;
+  margin: 10px;
 }
 .card p.title {
   margin: 0;

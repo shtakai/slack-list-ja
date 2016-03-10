@@ -19590,7 +19590,7 @@ var SlackList = function (_Component) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
         return _react2.default.createElement(
           'div',
-          { className: 'column', key: team.url },
+          { key: team.url },
           _react2.default.createElement(_item2.default, {
             key: team.url,
             name: team.name,
