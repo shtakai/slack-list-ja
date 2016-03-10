@@ -19484,34 +19484,38 @@ var Item = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "column card animated fadeInUp" },
+        { className: "column is-quarter animated fadeInUp" },
         _react2.default.createElement(
           "div",
-          { className: "card-content" },
+          { className: "card" },
           _react2.default.createElement(
             "div",
-            { className: "media" },
+            { className: "card-content" },
             _react2.default.createElement(
               "div",
-              { className: "media-content" },
+              { className: "media" },
               _react2.default.createElement(
-                "p",
-                { className: "title is-5" },
-                this.props.name
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: this.props.url, className: "url" },
-                this.props.url
+                "div",
+                { className: "media-content" },
+                _react2.default.createElement(
+                  "p",
+                  { className: "title is-5" },
+                  this.props.name
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: this.props.url, className: "url" },
+                  this.props.url
+                )
               )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "content" },
-            this.props.description
-          ),
-          this.renderTag()
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "content" },
+              this.props.description
+            ),
+            this.renderTag()
+          )
         )
       );
     }
@@ -19588,17 +19592,13 @@ var SlackList = function (_Component) {
 
       return this.state.teams.map(function (team) {
         if (!JSON.stringify(team).match(new RegExp(_this3.state.search))) return null;
-        return _react2.default.createElement(
-          'div',
-          { key: team.url },
-          _react2.default.createElement(_item2.default, {
-            key: team.url,
-            name: team.name,
-            url: team.url,
-            description: team.description,
-            tag: team.tag
-          })
-        );
+        return _react2.default.createElement(_item2.default, {
+          key: team.url,
+          name: team.name,
+          url: team.url,
+          description: team.description,
+          tag: team.tag
+        });
       });
     }
   }, {
@@ -19644,7 +19644,7 @@ var SlackList = function (_Component) {
           { className: 'items' },
           _react2.default.createElement(
             'div',
-            { className: 'columns is-multiline ' },
+            { className: 'columns  is-multiline ' },
             this.renderItems()
           )
         ),

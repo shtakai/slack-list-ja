@@ -11027,15 +11027,17 @@ a.menu-block:hover {
 .url {
   word-wrap: break-word;
 }
+.column {
+  padding: 20px 10px;
+}
 .card {
-  width: 320px;
-  margin: 10px;
+  width: 95%;
 }
 .card p.title {
   margin: 0;
 }
 .tag {
-  margin: 0 5px 0 0;
+  margin: 0 5px 5px 0;
 }
 footer {
   text-align: center;

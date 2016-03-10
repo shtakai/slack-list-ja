@@ -24,15 +24,13 @@ export default class SlackList extends Component {
     return this.state.teams.map((team) => {
       if (!JSON.stringify(team).match(new RegExp(this.state.search))) return null;
       return (
-        <div key={ team.url }>
-          <Item
-            key={ team.url }
-            name={ team.name }
-            url={ team.url }
-            description={ team.description }
-            tag={ team.tag }
-          />
-        </div>
+        <Item
+           key={ team.url }
+           name={ team.name }
+           url={ team.url }
+           description={ team.description }
+           tag={ team.tag }
+        />
       );
     });
   }
@@ -61,7 +59,7 @@ export default class SlackList extends Component {
           </div>
         </section>
         <div className="items">
-          <div className="columns is-multiline ">
+          <div className="columns  is-multiline ">
             { this.renderItems() }
           </div>
         </div>
