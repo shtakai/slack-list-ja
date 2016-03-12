@@ -11026,6 +11026,7 @@ a.menu-block:hover {
 }
 .url {
   word-wrap: break-word;
+  word-break: break-word;
 }
 .column {
   padding: 20px 10px;
