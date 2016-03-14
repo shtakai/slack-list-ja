@@ -148,5 +148,11 @@
         "url": "https://r-wakalang.herokuapp.com/",
         "description": "Rのわからないことを質問したり雑談したりするSlack",
         "tag": ["R"]
+    },
+    {
+        "name": "MySQL Casual",
+        "url": "https://mysql-casual-slackin.herokuapp.com/",
+        "description": "MySQLについて日本語で話すSlack",
+        "tag": ["MySQL"]
     }
 ]
