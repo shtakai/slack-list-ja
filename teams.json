@@ -158,7 +158,7 @@
     {
         "name": "postgresql-jp",
         "url": "https://postgresql-hackers-jp.herokuapp.com/",
-        "description": "PostgreSQLについて日本語で話すSlack,
+        "description": "PostgreSQLについて日本語で話すSlack",
         "tag":["PostgreSQL"]
     }
 ]
