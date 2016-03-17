@@ -160,5 +160,11 @@
         "url": "https://postgresql-hackers-jp.herokuapp.com/",
         "description": "PostgreSQLについて日本語で話すSlack",
         "tag":["PostgreSQL"]
+    },
+    {
+        "name": "android-jp",
+        "url": "https://android-jp.herokuapp.com/",
+        "description": "Androidについて日本語で話すSlack",
+        "tag": ["Android", "Java", "Google"]
     }
 ]
