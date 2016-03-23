@@ -82,7 +82,7 @@
         "url": "http://join2slack-zohyomeetup.rhcloud.com/",
         "description": "雑兵たちのたまり場",
         "tag": ["Web", "Work"]
-    },    
+    },
     {
         "name": "雑談Slack",
         "url": "http://samezi-but.com/zdnj.html",
@@ -166,5 +166,11 @@
         "url": "https://android-jp.herokuapp.com/",
         "description": "Androidについて日本語で話すSlack",
         "tag": ["Android", "Java", "Google"]
+    },
+    {
+        "name": "rust-jp",
+        "url": "https://rust-jp.herokuapp.com/",
+        "description": "プログラミング言語 Rust の日本語コミュニティ",
+        "tag": ["Rust"]
     }
 ]
