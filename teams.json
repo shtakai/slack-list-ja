@@ -178,5 +178,11 @@
         "url": "http://goo.gl/forms/fRfj2o85kE/",
         "description": "Geek、プログラマ、インフラ等 技術者トークが好きな方！",
         "tag": ["Teck", "Geek"]
+    },
+    {
+        "name": "WordSlack",
+        "url": "http://wpdocs.osdn.jp/WordSlack%E3%81%B8%E3%81%AE%E5%8F%82%E5%8A%A0%E6%96%B9%E6%B3%95",
+        "description": "日本語で話す WordPress コミュニティの非公式 Slack チャンネル",
+        "tag": ["WordPress", "Web"]
     }
 ]
