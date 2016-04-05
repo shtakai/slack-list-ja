@@ -190,5 +190,11 @@
         "url": "https://ng-japan-invite.herokuapp.com/",
         "description": "日本のAngularユーザーのためのSlackチーム",
         "tag": ["Angular", "AngularJS", "JavaScript", "Web", "Google"]
+    },
+    {
+        "name": "vuejs-jp",
+        "url": "https://vuejs-jp-slackin.herokuapp.com/",
+        "description": "日本の Vuejs コミュニティのための Slack チャンネル",
+        "tag": ["Vue", "Vuejs", "JavaScript", "Web", "Component", "Reactive"]
     }
 ]
