@@ -196,5 +196,11 @@
         "url": "https://vuejs-jp-slackin.herokuapp.com/",
         "description": "日本の Vuejs コミュニティのための Slack チャンネル",
         "tag": ["Vue", "Vuejs", "JavaScript", "Web", "Component", "Reactive"]
+    },
+    {
+        "name": "nicogramming",
+        "url": "http://nicogramming.herokuapp.com/",
+        "description": "プログラミング放送者のためのSlackチェンネル",
+        "tag": ["niconico", "Web"]
     }
 ]
