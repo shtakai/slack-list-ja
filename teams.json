@@ -202,5 +202,11 @@
         "url": "http://nicogramming.herokuapp.com/",
         "description": "プログラミング放送者のためのSlackチェンネル",
         "tag": ["niconico", "Web"]
+    },
+    {
+        "name": "nodered",
+        "url": "https://nodered-slack.herokuapp.com/",
+        "description": "Node-REDユーザーのためのSlackチャンネル",
+        "tag": ["node-red", "iot"]
     }
 ]
