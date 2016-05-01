@@ -208,5 +208,11 @@
         "url": "https://nodered-slack.herokuapp.com/",
         "description": "Node-REDユーザーのためのSlackチャンネル",
         "tag": ["node-red", "iot"]
+    },
+    {
+        "name": "paasjp",
+        "url": "http://slack.paas.jp/",
+        "description": "さまざまなPaaSをテーマにするSlackチーム",
+        "tag": ["paas"]
     }
 ]
