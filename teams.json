@@ -214,5 +214,11 @@
         "url": "http://slack.paas.jp/",
         "description": "さまざまなPaaSをテーマにするSlackチーム",
         "tag": ["paas"]
+    },
+    {
+        "name": "dartlang-users-jp",
+        "url": "http://dartlang-users-jp-invite.herokuapp.com/",
+        "description": "日本のDartユーザーのためのSlackチーム",
+        "tag": ["Dart","Web"]
     }
 ]
