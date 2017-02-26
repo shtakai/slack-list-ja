@@ -250,5 +250,11 @@
         "url": "http://www.python.jp/community/#python-jp-slack",
         "description": "日本のPythonユーザーのためのSlackチーム",
         "tag": ["Python"]
+    },
+    {
+        "name": "emacs-jp",
+        "url": "https://slack-emacs-jp.herokuapp.com/",
+        "description": "日本の Emacs ユーザーのためのハブサイト",
+        "tag": ["Emacs", "Editor", "Emacs Lisp"]
     }
 ]
