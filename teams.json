@@ -244,5 +244,11 @@
         "url": "https://gitlab-jp.herokuapp.com/",
         "description": "GitLabについての情報収集や、意見交換を日本語でするSlackチーム",
         "tag": ["GitLab", "git"]
+    },
+    {
+        "name": "pythonjp",
+        "url": "http://www.python.jp/community/#python-jp-slack",
+        "description": "日本のPythonユーザーのためのSlackチーム",
+        "tag": ["Python"]
     }
 ]
